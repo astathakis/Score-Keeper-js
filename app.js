@@ -20,6 +20,8 @@ p1Button.addEventListener('click', function () {
       gameOver = true;
       p1Display.classList.add('has-text-success');
       p2Display.classList.add('has-text-danger');
+      p1Button.disabled = true;
+      p2Button.disabled = true;
     }
     p1Display.textContent = p1Score;
   }
@@ -33,6 +35,8 @@ p2Button.addEventListener('click', function () {
       gameOver = true;
       p2Display.classList.add('has-text-success');
       p1Display.classList.add('has-text-danger');
+      p1Button.disabled = true;
+      p2Button.disabled = true;
     }
     p2Display.textContent = p2Score;
   }
