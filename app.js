@@ -59,4 +59,7 @@ function reset() {
   gameOver = false;
   p1Display.classList.remove('has-text-success', 'has-text-danger');
   p2Display.classList.remove('has-text-danger', 'has-text-success');
+
+  p1Button.disabled = false;
+  p2Button.disabled = false;
 }
